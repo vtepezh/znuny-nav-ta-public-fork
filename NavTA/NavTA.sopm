@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_package version="1.0">
+    <Name>NavTA</Name>
+    <Version>0.1.0</Version>
+    <Framework>7.3.x</Framework>
+    <PackageRequired Version="7.3.1">ITSMConfigurationManagement</PackageRequired>
+    <Vendor>netatvision</Vendor>
+    <URL>https://github.com/vtepezh/znuny-nav-ta</URL>
+    <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
+    <Description Lang="en">Agent UI for documenting the provisioning of customer routers/clusters (CMDB based).</Description>
+    <Description Lang="de">Agenten-Oberfläche zur Dokumentation der Provisionierung von Kunden-Routern/-Clustern (CMDB-basiert).</Description>
+    <Filelist>
+        <File Permission="660" Location="Kernel/Config/Files/XML/NavTA.xml"/>
+        <File Permission="660" Location="Kernel/Modules/AgentNavTA.pm"/>
+        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentNavTA.tt"/>
+    </Filelist>
+</otrs_package>

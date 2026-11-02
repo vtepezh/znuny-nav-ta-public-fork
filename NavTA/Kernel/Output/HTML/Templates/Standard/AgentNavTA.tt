@@ -1,0 +1,21 @@
+# --
+# Copyright (C) 2026 netatvision
+# --
+<div class="MainBox ARIARoleMain LayoutFixedSidebar SidebarFirst">
+    <h1 class="InvisibleText">[% Translate("Provisioning") | html %]</h1>
+    <div class="ContentColumn">
+        <div class="WidgetSimple">
+            <div class="Header">
+                <h2>[% Translate("NavTA – Router/Cluster Provisioning") | html %]</h2>
+            </div>
+            <div class="Content">
+                <p>Skeleton module – deployed successfully. CMDB classes visible to this module:</p>
+                <ul>
+[% RenderBlockStart("Class") %]
+                    <li>[% Data.Name | html %] (ID [% Data.ClassID | html %])</li>
+[% RenderBlockEnd("Class") %]
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
